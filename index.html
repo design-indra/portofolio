@@ -3,300 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Creative Writer & Strategist</title>
+    <title>Beranda | Portofolio Saya</title>
+
+    <!-- Google Fonts untuk elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
+        body, html {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #0f0f0f;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
             color: #ffffff;
-            line-height: 1.7;
-            scroll-behavior: smooth;
-        }
-
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-
-        header, section {
-            padding: 80px 20px;
             text-align: center;
         }
 
-        header {
-            min-height: 100vh;
+        /* Background gambar dengan overlay gelap */
+        body {
+            background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), 
+                        url('https://images.unsplash.com/photo-1602524813265-60c0b9d3c4e4?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            align-items: center;
         }
 
-        header h1 {
+        h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        header span {
+            margin-bottom: 15px;
             color: #00ffcc;
         }
 
-        header p {
+        p {
             font-size: 1.2rem;
+            margin-bottom: 40px;
             color: #cccccc;
-            max-width: 800px;
-            margin: auto;
-            margin-bottom: 30px;
         }
 
-        .cta {
-            display: inline-block;
-            padding: 14px 30px;
-            background-color: #00ffcc;
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 250px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 30px;
+            background-color: rgba(0, 255, 204, 0.9);
             color: #000;
             font-weight: bold;
             border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        .cta:hover {
-            background-color: #00ccaa;
-        }
-
-        h2 {
-            color: #00ffcc;
-            margin-bottom: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .card {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-        }
-
-        .card h3 {
-            color: #00ffcc;
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 40px 0;
-        }
-
-        .contact-box {
-            background-color: #1a1a1a;
-            padding: 50px;
-            border-radius: 20px;
-            margin: auto;
-            max-width: 700px;
-        }
-
-        .contact-box a {
-            display: block;
-            margin: 15px 0;
-            padding: 14px;
-            background-color: #0f0f0f;
-            border-radius: 30px;
             text-decoration: none;
-            color: #ffffff;
-            border: 1px solid #333;
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
-        .contact-box a:hover {
-            background-color: #00ffcc;
-            color: #000;
+        .btn:hover {
+            background-color: rgba(0, 204, 170, 0.95);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,255,204,0.4);
+        }
+
+        .btn i {
+            font-size: 1.2rem;
         }
 
         footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #0a0a0a;
-            color: #777;
-        }
-
-        nav {
             position: fixed;
-            top: 0;
+            bottom: 20px;
             width: 100%;
-            background-color: #0a0a0a;
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-            z-index: 100;
-        }
-
-        nav a {
-            margin: 0 15px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #00ffcc;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
         }
     </style>
+
+    <!-- Font Awesome untuk icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <a href="#home">Beranda</a>
-    <a href="#portfolio">Portofolio</a>
-    <a href="#about">Tentang Saya</a>
-    <a href="#services">Jasa</a>
-    <a href="#contact">Kontak</a>
-</nav>
+    <h1>Selamat Datang</h1>
+    <p>Saya seorang Creative Writer & Marketing Strategist</p>
 
-<!-- Beranda -->
-<header id="home">
-    <h1>Halo, Saya <span>Creative Writer & Strategist</span></h1>
-    <p>
-        Penulis novel & lirik lagu yang menggabungkan storytelling, emosi,
-        dan strategi marketing untuk menciptakan karya dan penjualan yang berdampak.
-    </p>
-    <a href="#services" class="cta">Lihat Jasa Saya</a>
-</header>
-
-<!-- Portofolio -->
-<section id="portfolio">
-    <h2>Portofolio Karya</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Novel Fiksi Dewasa</h3>
-            <p>
-                Novel dengan tema realitas kehidupan, konflik batin,
-                dan psikologi manusia. Fokus pada emosi dan kedalaman karakter.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Lirik Lagu Emosional</h3>
-            <p>
-                Lirik lagu bertema cinta, kehilangan, dan perjuangan hidup.
-                Dibuat untuk mudah terhubung dengan pendengar.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Storytelling untuk Branding</h3>
-            <p>
-                Strategi pemasaran berbasis cerita untuk membangun trust,
-                kedekatan emosional, dan loyalitas audiens.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Strategi Penjualan Psikologi</h3>
-            <p>
-                Menggunakan pendekatan psikologi konsumen untuk meningkatkan
-                konversi tanpa hard selling.
-            </p>
-        </div>
+    <div class="btn-container">
+        <a href="portfolio.html" class="btn"><i class="fas fa-book"></i> Portofolio</a>
+        <a href="about.html" class="btn"><i class="fas fa-user"></i> Tentang Saya</a>
+        <a href="services.html" class="btn"><i class="fas fa-briefcase"></i> Services</a>
+        <a href="contact.html" class="btn"><i class="fas fa-envelope"></i> Kontak</a>
     </div>
-</section>
 
-<!-- Tentang Saya -->
-<section id="about">
-    <h2>Tentang Saya</h2>
-    <p>
-        Saya adalah seorang <strong>penulis novel</strong> dan <strong>penulis lirik lagu</strong>
-        yang terbiasa bermain dengan emosi, konflik batin, dan realitas kehidupan.
-        Dari dunia kreatif ini, saya memahami satu hal penting: <em>manusia bergerak karena cerita</em>.
-    </p>
-    <p>
-        Saya juga bekerja di bidang <strong>marketing & sales strategy</strong>,
-        memastikan setiap proyek tidak hanya kreatif tapi juga efektif.
-    </p>
-    <div class="highlight">
-        <p>
-            ✦ Menggabungkan storytelling, psikologi, dan strategi
-            untuk karya dan sistem penjualan yang manusiawi & efektif.
-        </p>
-    </div>
-</section>
-
-<!-- Jasa -->
-<section id="services">
-    <h2>Jasa yang Saya Tawarkan</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Penulisan Novel & Cerita</h3>
-            <p>
-                Fokus pada karakter, emosi, dan realitas manusia. Proyek personal & komersial.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Penulisan Lirik Lagu</h3>
-            <p>
-                Lirik jujur & emosional yang mudah terhubung dengan audiens.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Storytelling untuk Branding</h3>
-            <p>
-                Bangun cerita yang kuat, konsisten, dan dipercaya audiens.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Strategi Penjualan Psikologi</h3>
-            <p>
-                Pendekatan penjualan fokus pada emosi & pola pikir calon pembeli.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Kontak + WA Script -->
-<section id="contact">
-    <h2>Hubungi Saya</h2>
-    <div class="contact-box">
-        <p>
-            Ceritakan kebutuhan atau ide kamu. Saya akan merespons secepat mungkin.
-        </p>
-
-        <!-- WA / Email -->
-        <a href="mailto:emailkamu@gmail.com">📧 Email: emailkamu@gmail.com</a>
-        <a href="https://wa.me/628xxxxxxxxxx" target="_blank">
-            💬 WhatsApp: +62 8xx-xxxx-xxxx
-        </a>
-        <a href="https://instagram.com/usernamekamu" target="_blank">📸 Instagram: @usernamekamu</a>
-
-        <!-- CTA WA Script -->
-        <p style="margin-top:20px; color:#bbb; font-size:0.9rem;">
-            *Tips:* Untuk WA, gunakan script ini untuk closing:  
-            1. Salam & tanya kebutuhan: “Halo, terima kasih sudah menghubungi saya. Boleh ceritakan sedikit tentang proyek atau kebutuhan Anda?”  
-            2. Gali tujuan: “Dari yang Anda jelaskan, tujuan utama proyek ini adalah… Bisa ceritakan target audiens dan hasil yang diharapkan?”  
-            3. Tawarkan solusi: “Pendekatan terbaik menurut saya adalah [solusi singkat]. Fokus saya bukan sekadar hasil, tapi memastikan relevansi dan impact.”  
-            4. Sebut harga: “Investasi untuk proyek ini sekitar Rp X – Rp Y, tergantung scope dan revisi.”  
-            5. Closing: “Kalau setuju, saya bisa mulai setelah konfirmasi dan DP. Mau saya buatkan timeline singkat?”  
-        </p>
-
-        <div class="cta">
-            <a href="https://wa.me/628xxxxxxxxxx?text=Halo,%20saya%20ingin%20diskusi%20proyek%20dengan%20Anda." target="_blank">
-                Mulai Chat WhatsApp
-            </a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2026 • Portofolio Pribadi
-</footer>
+    <footer>
+        © 2026 • Portofolio Pribadi
+    </footer>
 
 </body>
-  </html>
+</html>
