@@ -27,6 +27,15 @@ h2{color:#00ffcc;margin-bottom:30px;}
 .btn{display:inline-block;padding:14px 30px;border-radius:30px;background-color:#00ffcc;color:#000;font-weight:bold;text-decoration:none;transition:all 0.3s ease;margin-top:20px;}
 .btn:hover{background-color:#00ccaa;transform:scale(1.05);}
 
+/* Container tombol responsive */
+.btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;       /* tombol pindah baris kalau sempit */
+    justify-content: center; /* rata tengah */
+    gap: 15px;             /* jarak antar tombol */
+}
+.btn { flex: 1 1 140px; max-width: 200px; text-align: center; }
+
 /* Contact box */
 .contact-box{background-color:rgba(26,26,26,0.95);padding:50px;border-radius:20px;max-width:700px;margin:auto;text-align:center;}
 .contact-box a{display:block;margin:15px 0;padding:14px;border-radius:30px;background-color:rgba(15,15,15,0.95);color:#fff;border:1px solid #333;text-decoration:none;transition:0.3s;}
