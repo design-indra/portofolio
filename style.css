@@ -1,0 +1,46 @@
+/* style.css - Global CSS */
+*{margin:0;padding:0;box-sizing:border-box;}
+body, html{font-family:'Montserrat',sans-serif;color:#fff;line-height:1.7;min-height:100vh;}
+
+/* Navbar */
+nav{position:fixed;top:0;width:100%;background-color:rgba(10,10,10,0.95);display:flex;justify-content:center;padding:15px 0;z-index:100;}
+nav a{margin:0 15px;font-weight:bold;color:#fff;text-decoration:none;transition:0.3s;}
+nav a:hover{color:#00ffcc;}
+
+/* Header */
+header{padding:110px 20px 60px 20px;text-align:center;}
+header h1{font-size:2.8rem;margin-bottom:15px;color:#00ffcc;}
+header p{color:#bbbbbb;max-width:750px;margin:auto;font-size:1.1rem;}
+
+/* Section */
+section{padding:80px 20px;max-width:1100px;margin:auto;}
+h2{color:#00ffcc;margin-bottom:30px;}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.card{background-color:rgba(26,26,26,0.95);padding:30px;border-radius:15px;transition:all 0.3s ease;}
+.card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 8px 20px rgba(0,255,204,0.4);}
+.card h3{color:#00ffcc;margin-bottom:10px;}
+.card p{color:#cccccc;}
+
+/* Buttons */
+.btn{display:inline-block;padding:14px 30px;border-radius:30px;background-color:#00ffcc;color:#000;font-weight:bold;text-decoration:none;transition:all 0.3s ease;margin-top:20px;}
+.btn:hover{background-color:#00ccaa;transform:scale(1.05);}
+
+/* Contact box */
+.contact-box{background-color:rgba(26,26,26,0.95);padding:50px;border-radius:20px;max-width:700px;margin:auto;text-align:center;}
+.contact-box a{display:block;margin:15px 0;padding:14px;border-radius:30px;background-color:rgba(15,15,15,0.95);color:#fff;border:1px solid #333;text-decoration:none;transition:0.3s;}
+.contact-box a:hover{background-color:#00ffcc;color:#000;}
+
+/* Footer */
+footer{text-align:center;padding:30px;background-color:#0a0a0a;color:#777;}
+
+/* Background per halaman */
+body.index{background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.7)), url('gambar_index.jpg') no-repeat center center fixed;background-size:cover;}
+body.portfolio{background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.7)), url('gambar_portfolio.jpg') no-repeat center center fixed;background-size:cover;}
+body.about{background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.7)), url('gambar_about.jpg') no-repeat center center fixed;background-size:cover;}
+body.services{background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.7)), url('gambar_services.jpg') no-repeat center center fixed;background-size:cover;}
+body.contact{background: linear-gradient(rgba(15,15,15,0.7),rgba(15,15,15,0.7)), url('gambar_contact.jpg') no-repeat center center fixed;background-size:cover;}
+
+/* Responsive */
+@media(max-width:500px){header h1{font-size:2.2rem;}header p{font-size:1rem;}.grid{gap:20px;}}
