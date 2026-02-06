@@ -1,153 +1,59 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak | Bekerja Sama</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #0f0f0f;
-            color: #ffffff;
-            line-height: 1.7;
-        }
-
-        header {
-            padding: 90px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            color: #bbbbbb;
-            max-width: 750px;
-            margin: auto;
-            font-size: 1.1rem;
-        }
-
-        section {
-            padding: 80px 20px;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .contact-box {
-            background-color: #1a1a1a;
-            padding: 50px;
-            border-radius: 20px;
-        }
-
-        .contact-box h2 {
-            color: #00ffcc;
-            margin-bottom: 20px;
-        }
-
-        .contact-box p {
-            color: #cccccc;
-            margin-bottom: 30px;
-        }
-
-        .contact-link {
-            display: block;
-            margin: 15px 0;
-            padding: 14px;
-            background-color: #0f0f0f;
-            border-radius: 30px;
-            text-decoration: none;
-            color: #ffffff;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
-        .contact-link:hover {
-            background-color: #00ffcc;
-            color: #000;
-        }
-
-        .cta {
-            margin-top: 40px;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 14px 30px;
-            background-color: #00ffcc;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #00ccaa;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #0a0a0a;
-            color: #777;
-        }
-
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak | Hubungi Saya</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+body, html{margin:0;font-family:'Montserrat',sans-serif;background-color:#0f0f0f;color:#fff;line-height:1.7;}
+nav{position:fixed;top:0;width:100%;background-color:rgba(10,10,10,0.95);display:flex;justify-content:center;padding:15px 0;z-index:100;}
+nav a{margin:0 15px;font-weight:bold;color:#fff;text-decoration:none;transition:0.3s;}
+nav a:hover{color:#00ffcc;}
+header{padding:110px 20px;text-align:center;background:linear-gradient(135deg,#0f0f0f,#1b1b1b);}
+header h1{font-size:2.8rem;margin-bottom:15px;color:#00ffcc;}
+header p{color:#bbbbbb;max-width:750px;margin:auto;font-size:1.1rem;}
+section{padding:80px 20px;text-align:center;}
+.contact-box{background-color:#1a1a1a;padding:50px;border-radius:20px;max-width:700px;margin:auto;}
+.contact-box a{display:block;margin:15px 0;padding:14px;border-radius:30px;background-color:#0f0f0f;color:#fff;border:1px solid #333;text-decoration:none;transition:0.3s;}
+.contact-box a:hover{background-color:#00ffcc;color:#000;}
+p.script{color:#bbb;font-size:0.9rem;text-align:left;margin-top:20px;}
+footer{text-align:center;padding:30px;background-color:#0a0a0a;color:#777;}
+</style>
 </head>
 <body>
 
+<nav>
+<a href="index.html">Beranda</a>
+<a href="portfolio.html">Portofolio</a>
+<a href="about.html">Tentang Saya</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Kontak</a>
+</nav>
+
 <header>
-    <h1>Hubungi Saya</h1>
-    <p>
-        Jika kamu tertarik bekerja sama, berdiskusi proyek,
-        atau sekadar ingin bertanya, silakan hubungi saya.
-    </p>
+<h1>Hubungi Saya</h1>
+<p>Jika kamu tertarik bekerja sama atau ingin bertanya, silakan hubungi saya.</p>
 </header>
 
 <section>
-    <div class="contact-box">
-        <h2>Mari Mulai Percakapan</h2>
-        <p>
-            Ceritakan kebutuhan atau ide kamu.
-            Saya akan merespons secepat mungkin.
-        </p>
+<div class="contact-box">
+<a href="mailto:emailkamu@gmail.com">📧 Email: emailkamu@gmail.com</a>
+<a href="https://wa.me/628xxxxxxxxxx" target="_blank">💬 WhatsApp: +62 8xx-xxxx-xxxx</a>
+<a href="https://instagram.com/usernamekamu" target="_blank">📸 Instagram: @usernamekamu</a>
 
-        <!-- GANTI DATA DI BAWAH INI -->
-        <a class="contact-link" href="mailto:jrscholiez@gmail.com">
-            📧 Email: jrscholiez@gmail.com
-        </a>
-
-        <a class="contact-link" href="https://wa.me/6283803888990" target="_blank">
-            💬 WhatsApp: +6283 803 888 990
-        </a>
-
-        <a class="contact-link" href="https://instagram.com/indra.python" target="_blank">
-            📸 Instagram: @indra.python
-        </a>
-
-        <div class="cta">
-            <a href="services.html">Lihat Jasa Saya</a>
-        </div>
-
-        <p style="margin-top:30px;">
-            <a href="index.html">⬅ Kembali ke Beranda</a>
-        </p>
-    </div>
+<p class="script">
+*Tips WA Script:*<br>
+1. Salam & tanya kebutuhan: “Halo, terima kasih sudah menghubungi saya. Bisa ceritakan sedikit proyek Anda?”<br>
+2. Gali tujuan: “Tujuan utama proyek ini adalah… Bisa ceritakan target audiens & hasil yang diharapkan?”<br>
+3. Tawarkan solusi: “Pendekatan terbaik menurut saya adalah [solusi singkat]. Fokus pada relevansi & impact.”<br>
+4. Sebut harga: “Investasi proyek ini sekitar Rp X – Rp Y sesuai scope & revisi.”<br>
+5. Closing: “Kalau setuju, saya bisa mulai setelah konfirmasi & DP. Mau saya buatkan timeline singkat?”
+</p>
+</div>
 </section>
 
-<footer>
-    © 2026 • Portofolio Pribadi
-</footer>
-
+<footer>© 2026 • Portofolio Pribadi</footer>
 </body>
 </html>
