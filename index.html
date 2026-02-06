@@ -4,114 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beranda | Portofolio Saya</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-<style>
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(rgba(15,15,15,0.7), rgba(15,15,15,0.7)), url('https://images.unsplash.com/photo-1602524813265-60c0b9d3c4e4?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(10,10,10,0.95);
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    z-index: 100;
-}
-
-nav a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav a:hover { color: #00ffcc; }
-
-.container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-}
-
-h1 { font-size: 3rem; margin-bottom: 15px; color: #00ffcc; }
-p { font-size: 1.2rem; margin-bottom: 40px; color: #cccccc; }
-
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 250px;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 16px 30px;
-    background-color: rgba(0,255,204,0.9);
-    color: #000;
-    font-weight: bold;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 15px rgba(0,255,204,0.3);
-}
-
-.btn:hover {
-    transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,255,204,0.5);
-    background-color: rgba(0,204,170,0.95);
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #0a0a0a;
-    color: #777;
-    position: relative;
-}
-</style>
 </head>
-<body>
+<body class="index">
 
 <nav>
-    <a href="index.html">Beranda</a>
-    <a href="portfolio.html">Portofolio</a>
-    <a href="about.html">Tentang Saya</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Kontak</a>
+<a href="index.html">Beranda</a>
+<a href="portfolio.html">Portofolio</a>
+<a href="about.html">Tentang Saya</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Kontak</a>
 </nav>
 
-<div class="container">
+<header>
 <h1>Selamat Datang</h1>
 <p>Saya seorang Creative Writer & Marketing Strategist</p>
+</header>
 
-<div class="btn-container">
+<section class="btn-container">
 <a href="portfolio.html" class="btn"><i class="fas fa-book"></i> Portofolio</a>
 <a href="about.html" class="btn"><i class="fas fa-user"></i> Tentang Saya</a>
 <a href="services.html" class="btn"><i class="fas fa-briefcase"></i> Services</a>
 <a href="contact.html" class="btn"><i class="fas fa-envelope"></i> Kontak</a>
-</div>
-</div>
+</section>
 
 <footer>© 2026 • Portofolio Pribadi</footer>
-
 </body>
 </html>
