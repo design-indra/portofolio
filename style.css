@@ -1,54 +1,29 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
+/* =========================
+   INDEX PAGE ONLY
+   ========================= */
 
-body {
-  color: #f1f1f1;
-  line-height: 1.7;
-}
-
-/* Background otomatis */
 body.index {
   background: linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
               url("gambar_index.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
-}
-
-.navbar a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* Hero */
-.hero {
+/* Hero khusus index */
+body.index .hero {
   text-align: center;
   padding: 60px 20px 30px;
 }
 
-.hero h1 {
+body.index .hero h1 {
   font-size: 2.4rem;
 }
 
-.hero p {
+body.index .hero p {
   color: #cccccc;
 }
 
-/* Profile Section */
-.profile {
+/* Profile section khusus index */
+body.index .profile {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,7 +32,7 @@ body.index {
   padding: 40px 20px;
 }
 
-.profile img {
+body.index .profile img {
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -66,67 +41,19 @@ body.index {
   box-shadow: 0 0 25px rgba(0,255,204,0.4);
 }
 
-.profile-text {
+body.index .profile-text {
   max-width: 550px;
 }
 
-.profile-text h2 {
-  margin-bottom: 15px;
-}
-
-.profile-text p {
+body.index .profile-text p {
   color: #dddddd;
   margin-bottom: 12px;
 }
 
-blockquote {
+body.index blockquote {
   margin: 20px 0;
   padding-left: 15px;
   border-left: 3px solid #00ffcc;
   font-style: italic;
   color: #bbbbbb;
-}
-
-/* Buttons */
-.btn-container {
-  padding: 30px 20px;
-}
-
-.btn-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn {
-  text-decoration: none;
-  color: #000;
-  background: #00ffcc;
-  padding: 12px 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  flex: 1 1 140px;
-  max-width: 200px;
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,255,204,0.4);
-}
-
-.cv-btn {
-  margin-top: 20px;
-  display: inline-block;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.6);
-  color: #aaaaaa;
-  font-size: 0.9rem;
 }
