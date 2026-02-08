@@ -269,3 +269,43 @@ body.contact .profile-text {
   transform: translateY(-4px);
   box-shadow: 0 15px 30px rgba(0, 255, 204, 0.45);
 }
+
+/* ===== SOCIAL MEDIA ICON ===== */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 30px 0 10px;
+}
+
+.social-media a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-media a:hover {
+  background: #00b894;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 184, 148, 0.4);
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  .social-media a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
