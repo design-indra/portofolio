@@ -175,3 +175,14 @@ body.contact {
     url("gambar_contact.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
+/* =========================
+   CENTER TEXT (NON-INDEX)
+   ========================= */
+body.portfolio .profile-text,
+body.about .profile-text,
+body.services .profile-text,
+body.contact .profile-text {
+  text-align: center;
+  margin: 0 auto;
+}
