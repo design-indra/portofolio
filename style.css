@@ -1,0 +1,177 @@
+/* =========================
+   RESET & GLOBAL
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  color: #f1f1f1;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR (GLOBAL)
+   ========================= */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* =========================
+   HERO (GLOBAL BASIC)
+   ========================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+}
+
+.hero p {
+  color: #cccccc;
+}
+
+/* =========================
+   BUTTONS (GLOBAL)
+   ========================= */
+.btn-container {
+  padding: 30px 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #000;
+  background: #00ffcc;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  flex: 1 1 140px;
+  max-width: 200px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,255,204,0.4);
+}
+
+/* =========================
+   FOOTER (GLOBAL)
+   ========================= */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   INDEX PAGE ONLY
+   ========================= */
+body.index .profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+body.index .profile img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00ffcc;
+  box-shadow: 0 0 25px rgba(0,255,204,0.4);
+}
+
+body.index .profile-text {
+  max-width: 550px;
+}
+
+body.index .profile-text h2 {
+  margin-bottom: 15px;
+}
+
+body.index .profile-text p {
+  color: #dddddd;
+  margin-bottom: 12px;
+}
+
+body.index blockquote {
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 3px solid #00ffcc;
+  font-style: italic;
+  color: #bbbbbb;
+}
+
+.cv-btn {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* =========================
+   BACKGROUND PER HALAMAN
+   ========================= */
+body.index {
+  background:
+    linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
+    url("gambar_index.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.portfolio {
+  background:
+    linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
+    url("gambar_portfolio.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.about {
+  background:
+    linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
+    url("gambar_about.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.services {
+  background:
+    linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
+    url("gambar_services.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.contact {
+  background:
+    linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.75)),
+    url("gambar_contact.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
