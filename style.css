@@ -228,3 +228,44 @@ body.contact .profile-text {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.6);
 }
+
+/* =========================
+   PORTFOLIO CTA
+   ========================= */
+
+.portfolio-cta {
+  margin: 70px auto 40px;
+  padding: 40px 25px;
+  max-width: 900px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+}
+
+.portfolio-cta h2 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-cta p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 255, 204, 0.45);
+}
