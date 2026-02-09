@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://design-indra.github.io/portofolio/sitemap.xml
