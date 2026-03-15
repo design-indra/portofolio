@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Field Descriptions</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  :root {
+    --bg: #0a0a0f;
+    --card: #111118;
+    --border: #1e1e2e;
+    --accent1: #6ee7b7;
+    --accent2: #818cf8;
+    --accent3: #f472b6;
+    --text: #e2e8f0;
+    --muted: #64748b;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  header .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent1);
+    margin-bottom: 1rem;
+  }
+
+  header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 0%, var(--accent2) 60%, var(--accent3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  header p {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.8rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 16px 16px 0 0;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .card-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    background: color-mix(in srgb, var(--accent-color) 15%, transparent);
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .card p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: #94a3b8;
+    font-weight: 300;
+  }
+
+  .card .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.1rem;
+  }
+
+  .card .skills-list span {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    background: #1e1e2e;
+    color: var(--muted);
+    font-family: 'DM Sans', monospace;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Professional Profiles</p>
+  <h1>Digital & Tech<br>Field Descriptions</h1>
+  <p>A curated overview of roles and disciplines in the modern digital world.</p>
+</header>
+
+<div class="grid">
+
+  <div class="card" style="--accent-color: #6ee7b7">
+    <span class="card-icon">🌐</span>
+    <span class="card-tag">Development</span>
+    <h2>Web Developer</h2>
+    <p>A Web Developer builds and maintains websites and web applications that run in a browser. They transform design concepts and business requirements into functional, responsive, and accessible digital experiences — from simple landing pages to complex web systems.</p>
+    <div class="skills-list">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span><span>Browser APIs</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #818cf8">
+    <span class="card-icon">🎨</span>
+    <span class="card-tag">Design</span>
+    <h2>UI/UX Designer</h2>
+    <p>A UI/UX Designer crafts the visual language and interaction flow of digital products. They research user behavior, design wireframes and prototypes, and ensure every interface is intuitive, beautiful, and purposeful — bridging the gap between user needs and business goals.</p>
+    <div class="skills-list">
+      <span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>User Research</span><span>Design Systems</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #f472b6">
+    <span class="card-icon">🧱</span>
+    <span class="card-tag">Markup & Styling</span>
+    <h2>HTML/CSS Specialist</h2>
+    <p>An HTML/CSS Specialist masters the foundational building blocks of the web. They structure content semantically with HTML and bring designs to life through precise, scalable CSS — ensuring pages are accessible, pixel-perfect, cross-browser compatible, and optimized for performance.</p>
+    <div class="skills-list">
+      <span>Semantic HTML</span><span>Flexbox</span><span>Grid</span><span>Animations</span><span>Accessibility</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #fbbf24">
+    <span class="card-icon">⚡</span>
+    <span class="card-tag">Development</span>
+    <h2>Full Stack Developer</h2>
+    <p>A Full Stack Developer is a versatile engineer capable of building both the client-facing frontend and the server-side backend of a web application. They architect entire systems end-to-end — handling databases, APIs, authentication, UI, and deployment as a single cohesive unit.</p>
+    <div class="skills-list">
+      <span>React / Vue</span><span>Node.js</span><span>REST API</span><span>SQL / NoSQL</span><span>DevOps</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #34d399">
+    <span class="card-icon">✍️</span>
+    <span class="card-tag">Content</span>
+    <h2>Copywriter</h2>
+    <p>A Copywriter crafts compelling, persuasive written content designed to drive action. From landing page headlines to email campaigns and ad scripts, they understand consumer psychology and brand voice — turning words into conversions, clicks, and loyal customers.</p>
+    <div class="skills-list">
+      <span>SEO Writing</span><span>Ad Copy</span><span>Brand Voice</span><span>CTAs</span><span>Storytelling</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #f87171">
+    <span class="card-icon">📣</span>
+    <span class="card-tag">Marketing</span>
+    <h2>Internet Marketer</h2>
+    <p>An Internet Marketer drives online visibility, traffic, and revenue through data-driven digital strategies. They manage campaigns across search engines, social media, and email platforms — leveraging analytics, A/B testing, and audience segmentation to maximize ROI and grow brands in the digital space.</p>
+    <div class="skills-list">
+      <span>SEO / SEM</span><span>Google Ads</span><span>Meta Ads</span><span>Email Marketing</span><span>Analytics</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #a78bfa">
+    <span class="card-icon">🔧</span>
+    <span class="card-tag">Backend</span>
+    <h2>Backend Developer</h2>
+    <p>A Backend Developer engineers the logic, data, and infrastructure that power applications behind the scenes. They design and maintain APIs, manage databases, handle server configurations, and ensure systems are secure, scalable, and highly performant under real-world demand.</p>
+    <div class="skills-list">
+      <span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>REST / GraphQL</span><span>Cloud</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #38bdf8">
+    <span class="card-icon">📱</span>
+    <span class="card-tag">Development</span>
+    <h2>Frontend Developer</h2>
+    <p>A Frontend Developer specializes in building the visual, interactive layer of digital products. They translate UI/UX designs into responsive, performant, and accessible interfaces using modern JavaScript frameworks — delivering seamless user experiences across all devices and screen sizes.</p>
+    <div class="skills-list">
+      <span>React</span><span>Vue</span><span>TypeScript</span><span>Tailwind</span><span>Performance</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #fb923c">
+    <span class="card-icon">🔍</span>
+    <span class="card-tag">Growth</span>
+    <h2>SEO Specialist</h2>
+    <p>An SEO Specialist optimizes digital content and website architecture to rank higher in search engine results organically. They conduct keyword research, audit site performance, build link strategies, and align technical and content decisions to drive consistent, sustainable organic traffic growth.</p>
+    <div class="skills-list">
+      <span>On-Page SEO</span><span>Technical SEO</span><span>Link Building</span><span>Keyword Research</span><span>Core Web Vitals</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #e879f9">
+    <span class="card-icon">🤖</span>
+    <span class="card-tag">Emerging Tech</span>
+    <h2>AI / Prompt Engineer</h2>
+    <p>An AI & Prompt Engineer designs, tests, and refines interactions with large language models to produce accurate, useful, and context-aware outputs. They build AI-powered workflows, integrate LLM APIs into products, and bridge the gap between raw AI capability and real-world business applications.</p>
+    <div class="skills-list">
+      <span>Prompt Design</span><span>LLM APIs</span><span>RAG</span><span>Fine-tuning</span><span>AI Integration</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #4ade80">
+    <span class="card-icon">☁️</span>
+    <span class="card-tag">Infrastructure</span>
+    <h2>DevOps / Cloud Engineer</h2>
+    <p>A DevOps Engineer bridges development and operations by automating deployment pipelines, managing cloud infrastructure, and ensuring applications run reliably at scale. They implement CI/CD workflows, containerization, monitoring, and security practices to accelerate delivery without sacrificing stability.</p>
+    <div class="skills-list">
+      <span>Docker</span><span>CI/CD</span><span>AWS / GCP</span><span>Kubernetes</span><span>Monitoring</span>
+    </div>
+  </div>
+
+  <div class="card" style="--accent-color: #67e8f9">
+    <span class="card-icon">🛒</span>
+    <span class="card-tag">E-Commerce</span>
+    <h2>E-Commerce Specialist</h2>
+    <p>An E-Commerce Specialist builds and optimizes online stores to maximize sales performance. They manage product listings, conversion rate optimization, payment integrations, and customer journeys — combining technical setup with marketing strategy to turn digital storefronts into high-converting revenue engines.</p>
+    <div class="skills-list">
+      <span>Shopify</span><span>WooCommerce</span><span>CRO</span><span>Analytics</span><span>Product Pages</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Digital Professions Overview · All fields relevant to the modern web & digital economy</p>
+</footer>
+
+</body>
+</html>
